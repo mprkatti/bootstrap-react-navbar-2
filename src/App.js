@@ -2,6 +2,7 @@ import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from './components/Layout';
+import Greeter from './components/GreeterForm';
 
 function App() {
 
@@ -44,27 +45,23 @@ function App() {
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperiores similique consectetur dolores tenetur et quaerat, eligendi beatae quos dolore delectus fuga voluptates perferendis blanditiis soluta amet vitae? Eveniet, explicabo ducimus aliquid enim aperiam doloribus debitis odit accusamus veritatis impedit. Similique ea id vel tempore autem adipisci. Nesciunt, officiis ab?
       </p>
     </div>
-    <div className="item">
-      <p>
 
+    <div className="item">
+
+      <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperiores similique consectetur dolores tenetur et quaerat, eligendi beatae quos dolore delectus fuga voluptates perferendis blanditiis soluta amet vitae? Eveniet, explicabo ducimus aliquid enim aperiam doloribus debitis odit accusamus veritatis impedit. Similique ea id vel tempore autem adipisci. Nesciunt, officiis ab?
-  
       </p>
 
       <p>
-
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperiores similique consectetur dolores tenetur et quaerat, eligendi beatae quos dolore delectus fuga voluptates perferendis blanditiis soluta amet vitae? Eveniet, explicabo ducimus aliquid enim aperiam doloribus debitis odit accusamus veritatis impedit. Similique ea id vel tempore autem adipisci. Nesciunt, officiis ab?
       </p>
     </div>
     <div className="item">
       <p>
-
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperiores similique consectetur dolores tenetur et quaerat, eligendi beatae quos dolore delectus fuga voluptates perferendis blanditiis soluta amet vitae? Eveniet, explicabo ducimus aliquid enim aperiam doloribus debitis odit accusamus veritatis impedit. Similique ea id vel tempore autem adipisci. Nesciunt, officiis ab?
-  
       </p>
 
       <p>
-
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime asperiores similique consectetur dolores tenetur et quaerat, eligendi beatae quos dolore delectus fuga voluptates perferendis blanditiis soluta amet vitae? Eveniet, explicabo ducimus aliquid enim aperiam doloribus debitis odit accusamus veritatis impedit. Similique ea id vel tempore autem adipisci. Nesciunt, officiis ab?
       </p>
     </div>
@@ -73,11 +70,18 @@ function App() {
   )
 
 
+  const showForm = () => {
+
+    return (
+      <Greeter />
+    )
+  }
+
   return (
     <div className="App">
       <Layout >
         <div className="backdrop">
-        {showContent()}  
+          {showForm()}        
         </div>    
       </Layout>
     </div>
