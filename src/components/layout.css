@@ -1,0 +1,44 @@
+.layout {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.navbar-alt {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 15vh;
+  /* margin-top: 5px; */
+  /* margin-bottom: 5px; */
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main {
+  min-height: 70vh;
+  background-color: lightcoral;
+}
+
+.footer {
+  background-color: orange;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  margin: 10px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5px 15px;
+  border: 1px solid lightgreen;
+}
+
+.backdrop {
+  background: rgba(0,0,0,0.4);
+  margin: 10px;
+  border-radius: 10px;
+}
