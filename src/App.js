@@ -5,7 +5,8 @@ import Layout from './components/Layout';
 import Greeter from './components/GreeterForm';
 
 function App() {
-  
+
+  /*
     const showContent = () => (
       <div className="d-flex flex-column justify-content-center align-items-center" style={{width: '500px', margin: '10px'}}>
       <h2>Outstanding tasks for the day !!</h2>
@@ -69,7 +70,7 @@ function App() {
     </div>
     )
   
-
+*/
   const showForm = () => {
 
     return (
@@ -81,8 +82,7 @@ function App() {
     <div className="App">
       <Layout >
         <div className="backdrop">
-          {/* {showForm()} */}
-          {showContent()}
+          {showForm()}
         </div>
       </Layout>
     </div>
